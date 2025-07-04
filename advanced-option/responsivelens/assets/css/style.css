@@ -67,7 +67,10 @@ button[type="submit"]:hover {
 
 /* Grid des cards */
 .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
+
 }
 
 /* Card devices */
@@ -123,5 +126,27 @@ iframe {
 
 iframe:hover {
   box-shadow: 0 10px 30px rgb(79 70 229 / 0.4);
+}
+
+
+/* Carte device */
+.device-wrapper {
+  background: #f9fafb;
+  border-radius: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Iframe container réduit */
+.device-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+/* Iframe plein écran */
+.device-scale:fullscreen,
+.device-scale:-webkit-full-screen {
+  transform: none !important;
+  width: 100vw !important;
+  height: 100vh !important;
 }
 
