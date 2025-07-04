@@ -17,9 +17,9 @@ function responsivelens_enqueue_assets($hook) {
     if ($hook !== 'toplevel_page_responsivelens') return;
 
     wp_enqueue_style('responsivelens-tailwind', 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css', [], '2.2.19');
-    wp_enqueue_style('responsivelens-style', plugin_dir_url(__FILE__) . 'assets/css/style.css', [], '1.0');
+    wp_enqueue_style('responsivelens-style', plugin_dir_url(__FILE__) . 'assets/css/style.css', [], '1.2');
 
-    wp_enqueue_script('responsivelens-fullscreen', plugin_dir_url(__FILE__) . 'assets/js/fullscreen.js', [], '1.0', true);
+    wp_enqueue_script('responsivelens-device-controls', plugin_dir_url(__FILE__) . 'assets/js/device-controls.js', [], '1.2', true);
 }
 
 // Ajout menu admin
